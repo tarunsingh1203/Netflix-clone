@@ -103,6 +103,7 @@ function closeDropdown1() {
 
 
 
+
 // ---------------------- country ----------------------------
 
 const customCountry = document.querySelector('.country');
@@ -284,6 +285,22 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 
 handleResize();
+
+
+
+
+function adjustDiv2Width() {
+
+   let div1Width = document.getElementById('reason-to-join-box1').offsetWidth;
+
+   document.getElementById('popup-btn').style.width = div1Width + 'px';
+   
+}
+
+
+adjustDiv2Width();
+
+window.addEventListener('resize', adjustDiv2Width);
 
 
 
